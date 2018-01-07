@@ -1,6 +1,8 @@
 # read data from data vault
 # last update: 2018-01-07
 
+options(warn=-1)
+
 # get data from STDIN ====
 myStdin <- file("stdin")
 input <- suppressWarnings(readLines(myStdin))
