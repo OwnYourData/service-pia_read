@@ -1,8 +1,8 @@
 # <img src="https://github.com/OwnYourData/service-pia_read/raw/master/assets/service.png" width="92"> PIA Read Service    
 The PIA Read Service provides convenience functions to access the OwnYourData Data Vault. It reads data from a specific repo and optionally decrypts the data.    
 
-more infos about OwnYourData: https://www.ownyourdata.eu
-OwnYourData Data Vault: https://data-vault.eu/en
+more infos about OwnYourData: https://www.ownyourdata.eu    
+OwnYourData Data Vault: https://data-vault.eu/en    
 Developer information: https://www.ownyourdata.eu/en/developer/    
 Docker Image: https://hub.docker.com/r/oydeu/srv-pia_read    
 
