@@ -1,5 +1,3 @@
-# PIA Read Service
-
 # <img src="https://github.com/OwnYourData/service-pia_read/raw/master/assets/service.png" width="92"> PIA Read Service    
 The PIA Read Service provides convenience functions to access the OwnYourData Data Vault. It reads data from a specific repo and optionally decrypts the data.    
 
@@ -17,12 +15,13 @@ echo '{"pia_url":"https://data-vault.eu",
        "app_key": "<insert Identifier from OwnYourData Base plugin>", 
        "app_secret": "<insert Secret from OwnYourData Base plugin>", 
        "repo": "oyd.location", 
-       "password": "<your data vault password>"}' | docker run -i --rm oydeu/srv-pia_read /bin/run.sh
+       "password": "<your data vault password>"}' | \
+docker run -i --rm oydeu/srv-pia_read /bin/run.sh
 ```    
 
 &nbsp;    
 
-# Improve the Sovrin Service for OwnYourData Notary
+# Improve the PIA Read Service
 Please report bugs and suggestions for new features using the [GitHub Issue-Tracker](https://github.com/OwnYourData/srv-pia_read/issues) and follow the [Contributor Guidelines](https://github.com/twbs/ratchet/blob/master/CONTRIBUTING.md).
 
 If you want to contribute, please follow these steps:
