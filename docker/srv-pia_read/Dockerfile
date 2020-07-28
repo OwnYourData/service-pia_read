@@ -15,6 +15,7 @@ RUN apt-get update \
                 'RCurl', \
                 'data.table', \
                 'sodium', \
+                'dplyr', \
                 'shiny'), repos='http://cran.r-project.org')" \
         && R -e "devtools::install_github('ownyourdata/oydapp')" \
 	&& mkdir -p /srv-pia_read

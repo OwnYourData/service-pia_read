@@ -43,6 +43,16 @@ if('private_key' %in% names(inputParsed)){
                 read = TRUE,
                 stringsAsFactors = FALSE
         )
+} else if('password' %in% names(inputParsed)){
+        app <- oydapp::setupApp(pia_url, app_key, app_secret, "")
+        privateKey <- oydapp::getPrivatekey(app, inputParsed$password)
+        privateKeyRaw <- sodium::sha256(charToRaw(privateKey))
+        keyItems <- data.frame(
+                repo = as.character(repo),
+                key  = oydapp::raw2str(privateKeyRaw),
+                read = TRUE,
+                stringsAsFactors = FALSE
+        )
 }
 
 # connect to data vault ====
